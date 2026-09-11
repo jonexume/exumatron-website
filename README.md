@@ -26,7 +26,20 @@ pnpm build
 pnpm preview
 ```
 
-## Service form integration
+## Contact email delivery
+
+Contact submissions require a configured Formspree endpoint. Create a form with
+the verified recipient `jon@exumatron.co.technology`, then set
+`VITE_CONTACT_FORM_ENDPOINT` in `.env.local` and in the deployment build environment.
+See `.env.example`. Restart the development server or rebuild after changing it.
+The endpoint is public; never place SMTP passwords or private API keys in VITE_ variables.
+
+Without an endpoint, the form reports that online messaging is unavailable and
+provides the direct email address. With an endpoint, success appears only after
+the service accepts the submission. Confirm a test inquiry reaches the recipient
+inbox before publishing; API acceptance alone does not prove inbox delivery.
+
+## Airtable service forms
 
 The three service categories are ready to receive Airtable form URLs:
 
