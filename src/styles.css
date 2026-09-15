@@ -14,3 +14,11 @@
 @media(max-width:1450px){.carousel-arrow.left{left:-22px}.carousel-arrow.right{right:-22px}}
 @media(max-width:900px){.compact-media-head{grid-template-columns:1fr;gap:20px}.compact-grid{grid-template-columns:repeat(2,1fr)}.video-card:nth-child(3){display:none}.service-tabs button{text-align:center}}
 @media(max-width:600px){.compact-media{padding-block:78px}.compact-media-head{margin-bottom:30px}.compact-grid{grid-template-columns:1fr}.video-card:nth-child(2),.video-card:nth-child(3){display:none}.carousel-arrow{top:95px}.carousel-arrow.left{left:-14px}.carousel-arrow.right{right:-14px}.card-poster>span{width:46px;height:46px}.video-modal{padding:20px}.modal-panel{width:100%}.modal-close{right:0}.modal-meta h3{font-size:18px}.service-tabs{grid-template-columns:repeat(3,165px)}}
+.services-four{grid-template-columns:1fr 1fr;gap:55px;padding:45px 70px 120px;min-height:690px;align-items:center}
+.services-four .service-detail{position:relative;right:auto;bottom:auto;width:100%;margin:0;z-index:2}
+.services-four .service-core{width:100%;max-width:340px}
+.services-four .service-tabs{width:100%;grid-template-columns:repeat(4,minmax(0,1fr))}
+.services-four .service-tabs button{padding:18px 14px;line-height:1.5}
+.services-four .service-detail li{line-height:1.6}
+@media(max-width:1000px){.services-four{padding:35px 55px 130px;gap:40px}.services-four .service-detail{max-width:580px}.services-four .service-core{margin:auto}.services-four .service-tabs{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:720px){.services-four{padding:25px 25px 150px}.services-four .service-tabs{grid-template-columns:repeat(4,165px);overflow-x:auto}.services-four .round{top:85px}.services-four .service-detail{width:100%;padding-left:16px}.services-four .service-core h3{font-size:23px}.services-four .service-tabs button{text-align:left}}
